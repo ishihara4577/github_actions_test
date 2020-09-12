@@ -1,0 +1,3 @@
+git diffのテスト
+
+hogehoge
