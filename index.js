@@ -11,3 +11,4 @@
 //   return String(value);
 // };
 
+console.log("git diffのテスト")
