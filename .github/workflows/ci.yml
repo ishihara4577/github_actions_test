@@ -8,9 +8,11 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    env:
+      my_env_var: ${{ <context> }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
         
       - name: echo context
-        run: echo ${{ <context> }}
+        run: echo $my_env_var
