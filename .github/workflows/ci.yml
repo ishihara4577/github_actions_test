@@ -1,5 +1,7 @@
 name: Actions test
-on: push
+on: 
+  push:
+    tags
 
 jobs:
   test:
