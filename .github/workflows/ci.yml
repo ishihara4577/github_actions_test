@@ -2,7 +2,7 @@ name: Actions test
 on: 
   push:
     tags:
-      - *
+      - '*'
 
 jobs:
   test:
