@@ -11,4 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
+        
+      - name: echo context
         run: echo ${{ <context> }}
