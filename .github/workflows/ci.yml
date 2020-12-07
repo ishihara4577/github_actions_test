@@ -1,9 +1,5 @@
 name: Actions test
-on: 
-  push:
-    tags:
-      - '*'
-
+on: [workflow_dispatch]
 jobs:
   test:
     name: Test
