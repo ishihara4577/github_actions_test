@@ -3,3 +3,11 @@ on:
   push:
   pull_request:
     types: [opened]
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 1200
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hashicorp/setup-terraform@v1
