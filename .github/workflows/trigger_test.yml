@@ -1,8 +1,7 @@
 name: trigger test
 on: 
-  push:
   pull_request:
-    types: [opened]
+    types: [synchronize]
 jobs:
   test:
     name: Test
