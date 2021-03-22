@@ -1,0 +1,5 @@
+name: trigger test
+on: 
+  push:
+  pull_request:
+    types: [opened]
