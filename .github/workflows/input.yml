@@ -1,4 +1,4 @@
-name: Hello World
+name: Input Test
 on:
   workflow_dispatch:
     inputs:
@@ -7,11 +7,11 @@ on:
         required: true
         default: ''
       environment:
-        description: "デプロイ先の環境を入力してください\ne.g.)dev, stg, test, prod"
+        description: 'デプロイ先の環境を入力してください'
         required: true
-        default: ''
+        default: 'dev'
       commit:
-        description: "コミットIDを入力してください\n入力しない場合はブランチのHEADをチェックアウト"
+        description: 'コミットIDを入力してください'
         required: false
         default: ''
 jobs:
