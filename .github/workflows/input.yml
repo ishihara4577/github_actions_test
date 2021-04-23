@@ -2,11 +2,18 @@ name: Hello World
 on:
   workflow_dispatch:
     inputs:
-      logLevel:
-        description: 'If run flow, input "run".'
+      project:
+        description: 'プロジェクト名を入力してください'
         required: true
         default: ''
-    branches: [ master ]
+      environment:
+        description: 'デプロイ先の環境を入力してください'
+        required: true
+        default: ''
+      commit:
+        description: 'コミットIDを入力してください'
+        required: false
+        default: ''
 jobs:
   build:
     if: github.event.inputs.logLevel == 'run'
