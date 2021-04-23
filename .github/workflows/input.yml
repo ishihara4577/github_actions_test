@@ -3,16 +3,15 @@ on:
   workflow_dispatch:
     inputs:
       project:
-        description: 'プロジェクト名を入力してください'
+        description: 'project name'
         required: true
         default: ''
       environment:
-        description: 'デプロイ先の環境を入力してください'
+        description: 'environment(dev, test, stg, prod)'
         required: true
         default: 'dev'
-        deprecationMessage: 'hogehogefugafuga'
-      commit:
-        description: 'コミットIDを入力してください'
+      ref:
+        description: 'ref'
         required: false
         default: ''
 jobs:
