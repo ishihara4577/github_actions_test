@@ -10,6 +10,7 @@ on:
         description: 'デプロイ先の環境を入力してください'
         required: true
         default: 'dev'
+        deprecationMessage: 'hogehogefugafuga'
       commit:
         description: 'コミットIDを入力してください'
         required: false
