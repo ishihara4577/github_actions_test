@@ -7,11 +7,11 @@ on:
         required: true
         default: ''
       environment:
-        description: 'デプロイ先の環境を入力してください'
+        description: "デプロイ先の環境を入力してください\ne.g.)dev, stg, test, prod"
         required: true
         default: ''
       commit:
-        description: 'コミットIDを入力してください'
+        description: "コミットIDを入力してください\n入力しない場合はブランチのHEADをチェックアウト"
         required: false
         default: ''
 jobs:
