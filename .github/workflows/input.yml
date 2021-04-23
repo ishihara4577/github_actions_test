@@ -16,8 +16,10 @@ on:
         default: ''
 jobs:
   build:
-    if: github.event.inputs.logLevel == 'run'
     runs-on: ubuntu-latest
-    steps:
-    - name: Run a one-line script
-      run: echo Hello, world!
+    steps: 
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - run: git checkout ${{ github.event.inputs.ref }}
+        if: ${{ github.event.inputs.ref != '' }}
